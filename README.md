@@ -2,7 +2,7 @@
 
 Repositorio con el código del [Curso Avanzado de React de Platzi](https://platzi.com/cursos/react-avanzado/)
 
-
+URL project on [now](https://cursoreactavanzado.now.sh/)
 
 ## instalando weback
  Vamos a instalar webpack y webpack-cli como dependencias de desarrollo con: npm i webpack wepack-cli --save-dev.
