@@ -1,4 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import app from './app'
 
-ReactDOM.render( <h1> PetGram Project </h1>, document.getElementById('app'))
+ReactDOM.render(<app />,
+document.getElementById('app'))
