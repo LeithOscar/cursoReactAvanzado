@@ -63,7 +63,7 @@ En esta clase haremos que el desarrollo sea más ágil y correcto siguiendo los 
 Vamos a instalar StandardJS como dependencia de desarrollo con: npm i standard --save-dev. StandardJS nos va a servir de Linter para una mejor escritura de JavaScript/React.
 Agregaremos un nuevo script en nuestro package.json: ""lint"": ""standard"".
 Ahora vamos a ignorar aquellos archivos que no queremos que el Linter arregle, añadiremos en nuestro package.json lo siguiente:
-```
+```python
 ""standard"": [
 	""ignore"": [
 		""/api/**""
@@ -71,7 +71,7 @@ Ahora vamos a ignorar aquellos archivos que no queremos que el Linter arregle, a
 ]
 ```
 Ahora, queremos que nuestro Linter nos detecte los errores a medida que vamos escribiendo, para hacer esto añadimos lo siguiente a nuestro package.json:
-```
+```python
 ""eslintConfig"": {
 	""extends"": [
 		""./node_modules/standard/eslintrc.json""
@@ -94,7 +94,7 @@ Cambiamos el name de la aplicación en el now.json
 Finalmente ejecutamos now
 Ahora para desplegar nuestro front haremos lo siguiente:
 Crearemos un archivo now.json en el root de nuestro proyecto con lo siguiente:
-```
+```python
 {
 	""version"": 2,
 	""name"": ""petgram"",
