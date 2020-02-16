@@ -55,3 +55,70 @@ module.exports = {
         }
 }
 ```
+
+
+###Linter, extensiones y deploy con Now
+En esta clase haremos que el desarrollo sea más ágil y correcto siguiendo los siguientes pasos:
+
+Vamos a instalar StandardJS como dependencia de desarrollo con: npm i standard --save-dev. StandardJS nos va a servir de Linter para una mejor escritura de JavaScript/React.
+Agregaremos un nuevo script en nuestro package.json: ""lint"": ""standard"".
+Ahora vamos a ignorar aquellos archivos que no queremos que el Linter arregle, añadiremos en nuestro package.json lo siguiente:
+```
+""standard"": [
+	""ignore"": [
+		""/api/**""
+	]
+]
+```
+Ahora, queremos que nuestro Linter nos detecte los errores a medida que vamos escribiendo, para hacer esto añadimos lo siguiente a nuestro package.json:
+```
+""eslintConfig"": {
+	""extends"": [
+		""./node_modules/standard/eslintrc.json""
+	]
+}
+```
+Ahora debemos tener lo siguiente en nuestro editor de código para que funcione todo al pie de la letra:
+Tener instalada la extensión ESLint
+Si quieres que al guardar los cambios se formatee tu código deberás tener instalada la extensión Prettier
+Tener las siguientes configuraciones en VSCode:
+Format On Save: false
+Prettier: Eslint Integration: true
+Eslint: Auto Fix On Save: true
+Ahora utilizaremos Now para hacer el deploy de nuestro proyecto.
+Descargaremos e instalaremos Now para que nos registre de una manera mucho más fácil los tokens de acceso y podamos continuar con el curso.
+Entraremos a la carpeta de api y notaremos que ya tiene un archivo now.json que preparamos para ti con toda la configuración necesaria para hacer el deploy.
+Para desplegar el proyecto del backend haremos lo siguiente en nuestra terminar:
+cd api
+Cambiamos el name de la aplicación en el now.json
+Finalmente ejecutamos now
+Ahora para desplegar nuestro front haremos lo siguiente:
+Crearemos un archivo now.json en el root de nuestro proyecto con lo siguiente:
+```
+{
+	""version"": 2,
+	""name"": ""petgram"",
+	""builds"": [
+		{
+			""use"": ""@now/static-build"",
+			""src"": ""package.json""
+		}
+	],
+	""routes"": [
+		{
+			""src"": ""(.*).js"",
+			""dest"": ""/$1.js""
+		},
+		{
+			""src"": ""(.*).json"",
+			""dest"": ""/$1.json""
+		},
+		{
+			""src"": ""/.*"",
+			""dest"": ""index.html""
+		}
+	]
+}
+```
+En nuestro package.json añadiremos el siguiente script: ""now-build"": ""npm run build"".
+Finalmente en la raíz de nuestro proyecto ejecutaremos now para que nos dé una URL en la que se verá nuestro proyecto."
