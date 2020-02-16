@@ -57,7 +57,7 @@ module.exports = {
 ```
 
 
-###Linter, extensiones y deploy con Now
+## Linter, extensiones y deploy con Now
 En esta clase haremos que el desarrollo sea más ágil y correcto siguiendo los siguientes pasos:
 
 Vamos a instalar StandardJS como dependencia de desarrollo con: npm i standard --save-dev. StandardJS nos va a servir de Linter para una mejor escritura de JavaScript/React.
