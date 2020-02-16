@@ -1,11 +1,11 @@
 import React from 'react'
-
-const DEFAULT_IMAGE="https://i.imgut.com/dJa0Hpl.jpg";
+import {Anchor, Image} from './styles.js'
+const DEFAULT_IMAGE="https://i.imgur.com/dJa0Hpl.jpg";
 
 export const Category=({cover=DEFAULT_IMAGE, path,emoji='?'}) =>(
 
-    <a href={path}>
-    <img src={cover} />
+    <Anchor href={path}>
+    <Image src={cover} />
     {emoji}
-    </a>
-);
+    </Anchor>
+)
