@@ -19,5 +19,4 @@ export const PhotoCard = ({ id, likes = 0, src = DEFAULT_IMAGE }) => {
     </article>
   )
 }
-styles.js
 

@@ -27,4 +27,3 @@ export const Button = styled.button`
     margin-right: 4px;
   }
 `
-/srccomponentsPhotoCard
