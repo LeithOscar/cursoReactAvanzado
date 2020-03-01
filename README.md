@@ -122,3 +122,7 @@ Crearemos un archivo now.json en el root de nuestro proyecto con lo siguiente:
 ```
 En nuestro package.json añadiremos el siguiente script: ""now-build"": ""npm run build"".
 Finalmente en la raíz de nuestro proyecto ejecutaremos now para que nos dé una URL en la que se verá nuestro proyecto."
+
+para Styled components, npm install styled-components -save --dev
+
+## Creando una lista de Categorias y estilos globales
