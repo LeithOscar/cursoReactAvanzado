@@ -163,3 +163,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 `
 ```
+
+## Usando React Icons PhotoCard
+
+npm install react-icons --save
+
+Usaremos react-icons para darle una propuesta visual mucho más amigable a nuestro proyecto con íconos como Font Awesome, Ionicons, Material Design Icons y mucho más que podremos usar.
+
