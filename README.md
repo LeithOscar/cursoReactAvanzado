@@ -171,3 +171,12 @@ npm install react-icons --save
 Usaremos [React-icons](https://react-icons.netlify.com/#/) para darle una propuesta visual mucho más amigable a nuestro proyecto con íconos como Font Awesome, Ionicons, Material Design Icons y mucho más que podremos usar.
 
 
+
+## Creando nuestro LOGO
+
+Usamremos 
+[maketext](https://maketext.io/)
+
+[jakearchibald](https://jakearchibald.github.io/svgomg/) para generar el SVG
+
+[PlayGround SVGR](https://react-svgr.com/playground/) para crear nuesto componente a partir del svg creado

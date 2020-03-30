@@ -1,13 +1,14 @@
 import React from 'react';
 import { CategoryList } from './components/CategoryList/'
 import { GlobalStyle } from './GlobalStyles'
-import {PhotoCard} from './components/PhotoCard';
-
+import { ListOfPhotoCards } from './components/ListOfPhotoCard/';
+import { Logo } from './components/Logo'
 
 export const App = () => (
     <div>
         <GlobalStyle />
+        <Logo />
         <CategoryList />
-        <PhotoCard />
+        <ListOfPhotoCards />
     </div>
 )
