@@ -180,3 +180,9 @@ Usamremos
 [jakearchibald](https://jakearchibald.github.io/svgomg/) para generar el SVG
 
 [PlayGround SVGR](https://react-svgr.com/playground/) para crear nuesto componente a partir del svg creado
+
+## HOOKS
+
+Hooks en React, cómo usar useEffect y useState y cómo estos Hooks nos permitirán mejorar el performance de nuestra aplicación.
+
+React es una biblioteca de JavaScript para construir interfaces de usuario. Es declarativo, basado en componentes y puedes escribir una vez y usarlo donde sea.
