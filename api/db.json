@@ -23,7 +23,7 @@
       "email": "dani@gmail.com"
     }
   ],
-  "categories": [
+  "categoriesLocal": [
     {
       "id": 1,
       "name": "cats",
