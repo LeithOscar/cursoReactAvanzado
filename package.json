@@ -7,8 +7,8 @@
     "build": "webpack",
     "lint": "standard",
     "dev": "webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon api/index.js"
+    "start:api": "NODE_ENV=production node index.js",
+    "dev:api": "nodemon index.js --ignore db.json"
   },
   "repository": {
     "type": "git",
@@ -30,16 +30,16 @@
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.10.3",
+    "nodemon": "^1.19.4"
   },
   "dependencies": {
     "-": "0.0.1",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "apollo-boost": "^0.4.7",
-    "apollo-server": "^2.11.0",
+    "apollo-server-express": "^2.11.0",
     "graphql": "^15.0.0",
     "intersection-observer": "^0.7.0",
-    "nodemon": "^1.19.4",
     "now": "^17.1.1",
     "now-cli": "0.0.0",
     "react": "^16.13.1",
