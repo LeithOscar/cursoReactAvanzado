@@ -6,6 +6,8 @@ import ApolloProvider from 'react-apollo'
 
 
 const client = new ApolloClient({
+
+    //petgram-server-leith
     uri: 'https://petgram-server-jcamacaro.camacaro.now.sh/graphql'
 })
 
