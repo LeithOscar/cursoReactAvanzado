@@ -7,7 +7,8 @@ const jwt = require('express-jwt')
 // this is not secure! this is for dev purposes
 process.env.JWT_SECRET = process.env.JWT_SECRET || 'somereallylongsecretkey'
 
-const PORT = process.env.PORT || 3500
+//const PORT = process.env.PORT || 3500
+const PORT = 'petgram-leith.now.sh/graphql'
 const app = express()
 const { categories } = require('./db.json')
 
