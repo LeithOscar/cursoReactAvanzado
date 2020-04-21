@@ -50,7 +50,9 @@ app.get('/categories', function (req, res) {
 
 if (!process.env.NOW_REGION) {
   app.listen(PORT, () => {
-    console.log(`Listening at http://localhost:${PORT}/graphql`)
+    //console.log(`Listening at http://localhost:${PORT}/graphql`)
+    console.log(`Listening at petgram-leith.now.sh
+    `)
   })
 }
 
