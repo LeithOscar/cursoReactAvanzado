@@ -7,8 +7,7 @@ const jwt = require('express-jwt')
 // this is not secure! this is for dev purposes
 process.env.JWT_SECRET = process.env.JWT_SECRET || 'somereallylongsecretkey'
 
-//const PORT = process.env.PORT || 3500
-const PORT = 'petgram-leith.now.sh/graphql'
+const PORT = process.env.PORT || 3500
 const app = express()
 const { categories } = require('./db.json')
 
@@ -51,9 +50,8 @@ app.get('/categories', function (req, res) {
 
 if (!process.env.NOW_REGION) {
   app.listen(PORT, () => {
-    //console.log(`Listening at http://localhost:${PORT}/graphql`)
-    console.log(`Listening at petgram-leith.now.sh
-    `)
+    alert("hi")
+    console.log(`Listening at http://localhost:${PORT}/graphql`)
   })
 }
 
