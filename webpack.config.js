@@ -1,12 +1,13 @@
-const HtmlWebpackplugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
         mode: 'development',
         output: {
                 filename: 'app.bundle.js'
         },
         plugins: [
-                new HtmlWebpackplugin({
-                        template: 'src/index.html'
+                new HtmlWebpackPlugin({
+                        template: './src/index.html'
                 })
         ],
         module: {
@@ -18,10 +19,7 @@ module.exports = {
                                         loader: 'babel-loader',
                                         options: {
                                                 plugins: ['@babel/plugin-syntax-dynamic-import'],
-                                                presets: [
-                                                        '@babel/preset-env',
-                                                        '@babel/preset-react'
-                                                ]
+                                                presets: ['@babel/preset-env', '@babel/preset-react']
                                         }
                                 }
                         }
