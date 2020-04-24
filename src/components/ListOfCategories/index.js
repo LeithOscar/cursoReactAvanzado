@@ -9,7 +9,7 @@ function useCategoriesData() {
 
   useEffect(function () {
     setLoading(true)
-    window.fetch('https://petgram-server.midudev.now.sh/categories')
+    window.fetch('https://petgram-server-leith-oeichlxx2.now.sh/categories')
       .then(res => res.json())
       .then(response => {
         setCategories(response)
