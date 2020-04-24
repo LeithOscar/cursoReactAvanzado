@@ -45,6 +45,7 @@ app.use(errorHandler)
 server.applyMiddleware({ app, path: '/graphql' })
 
 app.get('/categories', function (req, res) {
+  console.log(app)
   res.send(categories)
 })
 
