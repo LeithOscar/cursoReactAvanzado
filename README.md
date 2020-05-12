@@ -186,3 +186,7 @@ Usamremos
 Hooks en React, cómo usar useEffect y useState y cómo estos Hooks nos permitirán mejorar el performance de nuestra aplicación.
 
 React es una biblioteca de JavaScript para construir interfaces de usuario. Es declarativo, basado en componentes y puedes escribir una vez y usarlo donde sea.
+
+## Usando las mutaciones con los likes
+
+El componente de mutation es otro componente importante en una aplicación Apollo. Es un componente React que proporciona una función para ejecutar una mutation de GraphQL para así alterar la data. Además, rastrea el estado de carga, finalización y error de esa mutación.
