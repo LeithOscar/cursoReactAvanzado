@@ -9,7 +9,7 @@ mutation signup ($input: UserCredentials!) {
 `
 
 export const LoginMutation = ({ children }) => {
-    return <Mutation mutation={LOGIN}>
-        {children}
-    </Mutation>
+  return <Mutation mutation={LOGIN}>
+    {children}
+  </Mutation>
 }

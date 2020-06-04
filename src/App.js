@@ -13,32 +13,32 @@ import { Router } from '@reach/router'
 import Context from './Context'
 
 export const App = () => {
-    return (
-        <div>
-            <GlobalStyle />
-            <Logo />
-            <Router>
-                <Home path='/' />
-                <Home path='/pet/:categoryId' />
-                <Detail path='/detail/:detailId' />
-            </Router>
+  return (
+    <div>
+      <GlobalStyle />
+      <Logo />
+      <Router>
+        <Home path='/' />
+        <Home path='/pet/:categoryId' />
+        <Detail path='/detail/:detailId' />
+      </Router>
 
-            <Context.Consumer>
-                {
-                    ({ isAuth }) =>
-                        isAuth
-                            ? <Router>
-                                <Favs path='/favs' />
-                                <User path='/user' />
-                            </Router>
-                            : <Router>
-                                <NotRegisteredUser path='/favs' />
-                                <NotRegisteredUser path='/user' />
-                            </Router>
-                }
-            </Context.Consumer>
+      <Context.Consumer>
+        {
+          ({ isAuth }) =>
+            isAuth
+              ? <Router>
+                <Favs path='/favs' />
+                <User path='/user' />
+              </Router>
+              : <Router>
+                <NotRegisteredUser path='/favs' />
+                <NotRegisteredUser path='/user' />
+              </Router>
+        }
+      </Context.Consumer>
 
-            <NavBar />
-        </div>
-    )
+      <NavBar />
+    </div>
+  )
 }
