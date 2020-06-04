@@ -3,8 +3,8 @@ import { Mutation } from 'react-apollo'
 import { gql } from 'apollo-boost'
 
 const LOGIN = gql`
-mutation signup ($input: UserCredentials!) {
-    login (input: $input)
+mutation login($input: UserCredentials!) {
+  login (input: $input)
 }
 `
 
